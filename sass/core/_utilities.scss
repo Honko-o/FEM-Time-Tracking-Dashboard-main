@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+// Backgrounds
+.bg-primary-blue {background-color: $color-primary-blue}
+.bg-work {background-color: $color-primary-red-400-work}
+.bg-play {background-color: $color-primary-blue-400-play}
+.bg-study {background-color: $color-primary-red-400-study}
+.bg-exercise {background-color: $color-primary-limegreen-exercise}
+.bg-social {background-color: $color-primary-violet-social}
+.bg-self_care {background-color: $color-primary-soft-orange-self_care}
+.bg-neutral-blue-700 {background-color: $color-neutral-blue-700}
+
+// Text Colors
+.text-neutral-200 {color: $color-neutral-200}
+.text-neutral-blue-400 {color: $color-neutral-blue-400}
+
+.relative-position {position: relative}

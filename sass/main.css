@@ -1,0 +1,347 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+.ff-barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.ff-barlowCond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.ff-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.ff-300 {
+  font-weight: 300;
+}
+
+.ff-400 {
+  font-weight: 400;
+}
+
+.ff-500 {
+  font-weight: 500;
+}
+
+.bg-primary-blue {
+  background-color: #5847eb;
+}
+
+.bg-work {
+  background-color: #ff8c66;
+}
+
+.bg-play {
+  background-color: #56c2e6;
+}
+
+.bg-study {
+  background-color: #ff5c7c;
+}
+
+.bg-exercise {
+  background-color: #4acf81;
+}
+
+.bg-social {
+  background-color: #7536d3;
+}
+
+.bg-self_care {
+  background-color: #f1c65b;
+}
+
+.bg-neutral-blue-700 {
+  background-color: #1c1f4a;
+}
+
+.text-neutral-200 {
+  color: #bdc1ff;
+}
+
+.text-neutral-blue-400 {
+  color: #6f76c8;
+}
+
+.relative-position {
+  position: relative;
+}
+
+:root {
+  --grid-gap: 2rem;
+  --content-spacing: 1rem;
+  --flow-space: 1rem ;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1424;
+  padding-inline: 2rem;
+  padding-block: 4rem;
+}
+
+.flow > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "work" "play" "study" "exercise" "social" "self_care";
+  grid-gap: var(--grid-gap, 1rem);
+}
+
+.header {
+  grid-area: header;
+}
+
+.work {
+  grid-area: work;
+}
+
+.play {
+  grid-area: play;
+}
+
+.study {
+  grid-area: study;
+}
+
+.exercise {
+  grid-area: exercise;
+}
+
+.social {
+  grid-area: social;
+}
+
+.self_care {
+  grid-area: self_care;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-header h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+.header-wrapper {
+  border-radius: 10px;
+  transform: translateY(-5px);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.time-taken {
+  font-size: 1rem;
+}
+
+.bg-background {
+  height: 40px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.bg-background::before {
+  position: absolute;
+  right: 0;
+  top: -15%;
+  right: 1rem;
+  z-index: 0;
+}
+
+.work > *,
+.play > *,
+.study > *,
+.exercise > *,
+.social > *,
+.self_care > * {
+  padding: var(--content-spacing, 1rem);
+}
+
+.work .bg-background::before {
+  content: url(../images/icon-work.svg);
+}
+
+.play .bg-background::before {
+  content: url(../images/icon-play.svg);
+}
+
+.study .bg-background::before {
+  content: url(../images/icon-study.svg);
+}
+
+.exercise .bg-background::before {
+  content: url(../images/icon-exercise.svg);
+}
+
+.social .bg-background::before {
+  content: url(../images/icon-social.svg);
+}
+
+.self_care .bg-background::before {
+  content: url(../images/icon-self-care.svg);
+}
+
+@media (min-width: 50em) {
+  .info {
+    flex-direction: column;
+  }
+}
+.header-container {
+  --content-spacing: 1rem;
+}
+.header-container > * {
+  padding: var(--content-spacing, 1rem);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  transform: translateY(5px);
+}
+.profile-header img {
+  max-width: 20%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+  padding-top: calc(var(--content-spacing) + 5px);
+}
+.days a {
+  color: #6f76c8;
+}
+.days li.active a {
+  color: white;
+}
+
+.title {
+  font-size: 1.5em;
+}
+.title span {
+  display: block;
+  font-size: 0.75em;
+}
+
+@media (min-width: 50em) {
+  .grid-container-pc {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header work play study" "header exercise social self_care";
+  }
+
+  .profile-header {
+    flex-direction: column;
+  }
+  .profile-header img {
+    align-self: flex-start;
+    max-width: 30%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

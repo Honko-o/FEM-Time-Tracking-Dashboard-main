@@ -1,0 +1,65 @@
+@use '../core/variables' as *;
+
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.header-wrapper {
+    border-radius: 10px;
+    transform: translateY(-5px);
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.time-taken {
+    font-size: 1rem;
+}
+
+.bg-background {
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.bg-background::before {
+    position: absolute;
+    right: 0;
+    top: -15%;
+    right: 1rem;
+    z-index: 0;
+}
+
+.work > *,
+.play > *,
+.study > *,
+.exercise > *,
+.social > *,
+.self_care > * { padding: var(--content-spacing, 1rem);}
+
+.work .bg-background::before {content: url(../images/icon-work.svg)}
+.play .bg-background::before {content: url(../images/icon-play.svg)}
+.study .bg-background::before {content: url(../images/icon-study.svg)}
+.exercise .bg-background::before {content: url(../images/icon-exercise.svg)}
+.social .bg-background::before {content: url(../images/icon-social.svg)}
+.self_care .bg-background::before {content: url(../images/icon-self-care.svg)}
+
+@media (min-width: 50em) {
+    .info {
+        flex-direction: column;
+    }
+}

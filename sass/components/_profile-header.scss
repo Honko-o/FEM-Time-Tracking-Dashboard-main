@@ -1,0 +1,59 @@
+@use '../core/variables' as *;
+
+.header-container {
+    --content-spacing: 1rem;
+    & > * {
+        padding: var(--content-spacing, 1rem);
+    }
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transform: translateY(5px);
+    img {
+        max-width: 20%;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    padding-top: calc(var(--content-spacing) + 5px);
+    a {
+        color: $color-neutral-blue-400;
+    }
+    li.active {
+        a {
+            color: white;
+        }
+    }
+}
+
+.title {
+    font-size: 1.5em;
+    span {
+        display: block;
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 50em) {
+    .grid-container-pc {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "header work play study"
+                             "header exercise social self_care";
+    }
+    .profile-header {
+        flex-direction: column;
+        img {
+            align-self: flex-start;
+            max-width: 30%;
+        }
+    }
+}

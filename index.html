@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./sass/main.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main class="grid-container grid-container-pc">
+    <!-- Header -->
+    <div class="header-container">
+      <header class="profile-header bg-primary-blue">
+        <img src="./images/image-jeremy.png" alt="Jeremy">
+        <h1 class="title text-neutral-200 ff-rubik ff-300 ">
+         <span class="text-neutral-blue-400 ff-barlow">Report for</span>
+          Jeremy Robson
+        </h1>
+      </header>
+      <ul class="days bg-neutral-blue-700">
+        <li>
+          <a href="#"  class="ff-barlow" role="button">Daily</a>
+        </li>
+        <li class="active">
+          <a href="#" class="ff-barlow" role="button">Weekly</a>
+        </li>
+        <li>
+          <a href="#" class="ff-barlow" role="button">Monthly</a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Content -->
+    <section class="work">
+      <div class="bg-background relative-position bg-work" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">32hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 36hrs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="play">
+      <div class="bg-background relative-position bg-play" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Play</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">10hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 8hrs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="study">
+      <div class="bg-background relative-position bg-study" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Study</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">4hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 7hrs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="bg-background relative-position bg-exercise" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">4hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 5hrs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="bg-background relative-position bg-social" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Social</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">5hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 10hrs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="self_care">
+      <div class="bg-background relative-position bg-self_care" aria-hidden="true"></div>
+      <div class="header-wrapper flow position-relative bg-neutral-blue-700">
+        <header class="info-header">
+          <h2 class="ff-rubik ff-400">Self Care</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </header>
+        <div class="info">
+          <p class="ff-barlow time">2hrs</p>
+          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 2hrs</span>
+        </div>
+      </section>
+      </div>
+      
+  </main>
+
+</body>
+</html>
