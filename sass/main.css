@@ -150,12 +150,12 @@ body {
   color: #6f76c8;
 }
 
-.relative-position {
+.position-relative {
   position: relative;
 }
 
 :root {
-  --grid-gap: 2rem;
+  --grid-gap: 1.5rem;
   --content-spacing: 1rem;
   --flow-space: 1rem ;
 }
@@ -175,36 +175,41 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-areas: "header" "work" "play" "study" "exercise" "social" "self_care";
+  grid-template-areas: "header" "play" "study" "exercise" "social" "self_care";
   grid-gap: var(--grid-gap, 1rem);
 }
 
-.header {
-  grid-area: header;
-}
+@media (min-width: 50em) {
+  .header-container {
+    grid-area: header;
+  }
 
-.work {
-  grid-area: work;
-}
+  .work {
+    grid-area: work;
+  }
 
-.play {
-  grid-area: play;
-}
+  .play {
+    grid-area: play;
+  }
 
-.study {
-  grid-area: study;
-}
+  .study {
+    grid-area: study;
+  }
 
-.exercise {
-  grid-area: exercise;
-}
+  .exercise {
+    grid-area: exercise;
+  }
 
-.social {
-  grid-area: social;
-}
+  .social {
+    grid-area: social;
+  }
 
-.self_care {
-  grid-area: self_care;
+  .self_care {
+    grid-area: self_care;
+  }
+}
+section {
+  border-radius: 10px;
 }
 
 .info-header {
@@ -219,7 +224,11 @@ body {
 
 .header-wrapper {
   border-radius: 10px;
-  transform: translateY(-5px);
+  transition: 500ms background-color;
+  cursor: pointer;
+}
+.header-wrapper:hover {
+  background-color: #33387a;
 }
 
 .info {
@@ -227,17 +236,17 @@ body {
   justify-content: space-between;
 }
 
-.time {
+.current {
   color: white;
   font-size: 1.5rem;
 }
 
-.time-taken {
+.previous {
   font-size: 1rem;
 }
 
 .bg-background {
-  height: 40px;
+  height: 35px;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
@@ -287,9 +296,20 @@ body {
   .info {
     flex-direction: column;
   }
+
+  .current {
+    font-size: 2.5rem;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    bottom: 0;
+    height: calc(100% - 35px);
+  }
 }
 .header-container {
   --content-spacing: 1rem;
+  border-radius: 10px;
 }
 .header-container > * {
   padding: var(--content-spacing, 1rem);
@@ -300,7 +320,6 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  transform: translateY(5px);
 }
 .profile-header img {
   max-width: 20%;
@@ -311,13 +330,16 @@ body {
 .days {
   display: flex;
   justify-content: space-between;
-  border-radius: 0 0 10px 10px;
-  padding-top: calc(var(--content-spacing) + 5px);
+  border-radius: 10px;
+  padding-top: var(--content-spacing);
 }
-.days a {
+.days button {
+  background: transparent;
+  border: none;
   color: #6f76c8;
+  cursor: pointer;
 }
-.days li.active a {
+.days li.active button {
   color: white;
 }
 
@@ -340,7 +362,14 @@ body {
   }
   .profile-header img {
     align-self: flex-start;
-    max-width: 30%;
+    max-width: 35%;
+  }
+  .profile-header h1 {
+    padding-bottom: 2.5rem;
+  }
+
+  .days {
+    flex-direction: column;
   }
 }
 

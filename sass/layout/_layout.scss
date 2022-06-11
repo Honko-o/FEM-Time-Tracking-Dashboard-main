@@ -1,7 +1,7 @@
 @use '../core/variables' as *;
 
 :root {
-    --grid-gap: 2rem;
+    --grid-gap: 1.5rem;
     --content-spacing: 1rem;
     --flow-space: 1rem
 }
@@ -15,47 +15,20 @@ body {
     padding-block: 4rem;
 }
 
-.flow > :not(:last-child) {
-    margin-bottom: 1rem;
-}
+.flow > :not(:last-child) {margin-bottom: 1rem}
 
 .grid-container {
     display: grid;
-    grid-template-areas: "header"
-                        "work"
-                        "play"
-                        "study"
-                        "exercise"
-                        "social"
-                        "self_care";
+    grid-template-areas: "header" "play" "study" "exercise" "social" "self_care";
     grid-gap: var(--grid-gap, 1rem);
 }
 
-.header {
-    grid-area: header;
+@media (min-width: 50em) {
+    .header-container {grid-area: header}
+    .work {grid-area: work}
+    .play {grid-area: play}
+    .study {grid-area: study}
+    .exercise {grid-area: exercise}
+    .social {grid-area: social}
+    .self_care {grid-area: self_care}
 }
-
-.work {
-    grid-area: work;
-}
-
-.play {
-    grid-area: play;
-}
-
-.study {
-    grid-area: study;
-}
-
-.exercise {
-    grid-area: exercise;
-}
-
-.social {
-    grid-area: social;
-}
-
-.self_care {
-    grid-area: self_care;
-}
-

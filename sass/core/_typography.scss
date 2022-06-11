@@ -1,27 +1,13 @@
 @use './variables' as *;
 
-body {
-    font-size: 1.125rem;
-}
+body {font-size: 1.125rem}
 
-.ff-barlow {
-    font-family: 'Barlow', sans-serif;
-}
-.ff-barlowCond {
-    font-family: 'Barlow Condensed', sans-serif;
-}
-.ff-rubik {
-    font-family: 'Rubik', sans-serif;
-}
-.ff-300 {
-    font-weight: 300;
-}
-.ff-400 {
-    font-weight: 400;
-}
-.ff-500 {
-    font-weight: 500;
-}
+.ff-barlow {font-family: 'Barlow', sans-serif}
+.ff-barlowCond {font-family: 'Barlow Condensed', sans-serif}
+.ff-rubik {font-family: 'Rubik', sans-serif}
+.ff-300 {font-weight: 300}
+.ff-400 {font-weight: 400}
+.ff-500 {font-weight: 500}
 
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Barlow Condensed', sans-serif;

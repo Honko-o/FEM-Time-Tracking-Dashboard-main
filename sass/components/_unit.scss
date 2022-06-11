@@ -1,5 +1,7 @@
 @use '../core/variables' as *;
 
+section {border-radius: 10px}
+
 .info-header {
     display: flex;
     align-items: center;
@@ -12,8 +14,11 @@
 
 .header-wrapper {
     border-radius: 10px;
-    transform: translateY(-5px);
-
+    transition: 500ms background-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $header-hover
+    }
 }
 
 .info {
@@ -21,17 +26,15 @@
     justify-content: space-between;
 }
 
-.time {
+.current {
     color: white;
     font-size: 1.5rem;
 }
 
-.time-taken {
-    font-size: 1rem;
-}
+.previous {font-size: 1rem}
 
 .bg-background {
-    height: 40px;
+    height: 35px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
@@ -59,7 +62,11 @@
 .self_care .bg-background::before {content: url(../images/icon-self-care.svg)}
 
 @media (min-width: 50em) {
-    .info {
-        flex-direction: column;
+    .info {flex-direction: column}
+    .current {font-size: 2.5rem}
+    .header-wrapper {
+        width: 100%;
+        bottom: 0;
+        height: calc(100% - 35px); 
     }
 }

@@ -13,113 +13,113 @@
 <body>
   <main class="grid-container grid-container-pc">
     <!-- Header -->
-    <div class="header-container">
-      <header class="profile-header bg-primary-blue">
+    <div class="header-container bg-neutral-blue-700">
+      <div class="profile-header flow bg-primary-blue" style="--flow-spacing: 2rem">
         <img src="./images/image-jeremy.png" alt="Jeremy">
         <h1 class="title text-neutral-200 ff-rubik ff-300 ">
          <span class="text-neutral-blue-400 ff-barlow">Report for</span>
           Jeremy Robson
         </h1>
-      </header>
-      <ul class="days bg-neutral-blue-700">
+      </div>
+      <ul class="days flow">
         <li>
-          <a href="#"  class="ff-barlow" role="button">Daily</a>
+          <button id="daily" href="#"  class="ff-barlow">Daily</button>
         </li>
         <li class="active">
-          <a href="#" class="ff-barlow" role="button">Weekly</a>
+          <button id="weekly" href="#" class="ff-barlow">Weekly</button>
         </li>
         <li>
-          <a href="#" class="ff-barlow" role="button">Monthly</a>
+          <button id="monthly" href="#" class="ff-barlow">Monthly</button>
         </li>
       </ul>
     </div>
     
     <!-- Content -->
-    <section class="work">
-      <div class="bg-background relative-position bg-work" aria-hidden="true"></div>
+    <section class="work bg-work position-relative">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
-        <div class="info">
-          <p class="ff-barlow time">32hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 36hrs</span>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Work</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="info" section-index="0">
+          <p class="current ff-barlow"><span>32</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>36</span>hrs</span>
         </div>
       </div>
     </section>
 
-    <section class="play">
-      <div class="bg-background relative-position bg-play" aria-hidden="true"></div>
+    <section class="play bg-play position-relative" section-index="1">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Play</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Play</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
         <div class="info">
-          <p class="ff-barlow time">10hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 8hrs</span>
+          <p class="current ff-barlow"><span>10</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>8</span>hrs</span>
         </div>
       </div>
     </section>
 
-    <section class="study">
-      <div class="bg-background relative-position bg-study" aria-hidden="true"></div>
+    <section class="study bg-study position-relative" section-index="2">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Study</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Study</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
         <div class="info">
-          <p class="ff-barlow time">4hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 7hrs</span>
+          <p class="current ff-barlow"><span>4</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>7</span>hrs</span>
         </div>
       </div>
     </section>
 
-    <section class="exercise">
-      <div class="bg-background relative-position bg-exercise" aria-hidden="true"></div>
+    <section class="exercise bg-exercise position-relative" section-index="3">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Exercise</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
         <div class="info">
-          <p class="ff-barlow time">4hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 5hrs</span>
+          <p class="current ff-barlow"><span>4</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>5</span>hrs</span>
         </div>
       </div>
     </section>
 
-    <section class="social">
-      <div class="bg-background relative-position bg-social" aria-hidden="true"></div>
+    <section class="social bg-social position-relative" section-index="4">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Social</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Social</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
         <div class="info">
-          <p class="ff-barlow time">5hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 10hrs</span>
+          <p class="current ff-barlow"><span>5</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>10</span>hrs</span>
         </div>
       </div>
     </section>
 
-    <section class="self_care">
-      <div class="bg-background relative-position bg-self_care" aria-hidden="true"></div>
+    <section class="self_care bg-self_care position-relative" section-index="5">
+      <div class="bg-background position-relative" aria-hidden="true"></div>
       <div class="header-wrapper flow position-relative bg-neutral-blue-700">
-        <header class="info-header">
-          <h2 class="ff-rubik ff-400">Self Care</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
-        </header>
+        <div class="info-header">
+          <h2 class="ff-rubik ff-500">Self Care</h2>
+          <svg class="bullets" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        </div>
         <div class="info">
-          <p class="ff-barlow time">2hrs</p>
-          <span class="text-neutral-200 time-taken ff-barlow">Last Week - 2hrs</span>
+          <p class="current ff-barlow"><span>2</span>hrs</p>
+          <span class="previous text-neutral-200 ff-barlow">Last Week - <span>2</span>hrs</span>
         </div>
       </section>
       </div>
       
   </main>
-
+  <script src="./main.js"></script>
 </body>
 </html>
